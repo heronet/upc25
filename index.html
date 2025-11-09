@@ -316,11 +316,11 @@
       <div class="main-content">
         <div class="controls-panel">
           <div class="mode-selector">
-            <button class="mode-btn active" onclick="setMode('single')">
-              Single Shot
-            </button>
-            <button class="mode-btn" onclick="setMode('compare')">
+            <button class="mode-btn active" onclick="setMode('compare')">
               Compare
+            </button>
+            <button class="mode-btn" onclick="setMode('single')">
+              Single Shot
             </button>
           </div>
 
@@ -520,7 +520,7 @@
       const canvas = document.getElementById("trajectoryCanvas");
       const ctx = canvas.getContext("2d");
 
-      let mode = "single";
+      let mode = "compare";
       let trajectories = [];
       let mountainProfile = null;
       let groundTexture = null;
